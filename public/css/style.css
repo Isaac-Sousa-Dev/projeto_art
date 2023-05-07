@@ -1,0 +1,858 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;500;600;700&family=Ubuntu:wght@500&display=swap');
+
+/************ FONTS **************** 
+font-family: 'Bebas Neue', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+************************************/
+
+/*********** CORES *****************
+#094157 ( AZUL MAIS ESCURO )
+#BFE1EF ( QUASE BRANCO )
+#15A0D6 ( AZUL )
+#49575C ( CINZA )
+#313c3f ( CINZA ESCURO )
+#107AA3 ( AZUL ESCURO )
+***********************************/
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    
+}
+
+
+/* General */
+#index-container{
+    margin-top: 15px;
+    margin-left: 150px;
+    margin-right: 150px;
+    background-color: rgb(31, 29, 29); 
+    border-radius: 13px;
+}
+#index-container h5, p{
+    color: white;
+}
+#index-container #nav-link-edit{
+    color: yellow;
+}
+#index-container #nav-link-delete{
+    color: red;
+}
+#index-container .card-body a{
+    font-weight: bold;
+}
+#dash .msg{
+    font-weight: 600;
+    background-color: rgb(72, 205, 72);
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    width: 300px;
+    text-align: center;
+    padding: 5px;
+    margin-left: 10px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+#dash .msg-error{
+    font-weight: 600;
+    background-color: red;
+    color: white;
+    border: 1px solid rgb(233, 54, 54);
+    width: 300px;
+    text-align: center;
+    padding: 5px;
+    margin-left: 10px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+#dash .msg-danied{
+    font-weight: 600;
+    background-color: yellow;
+    color: black;
+    border: 1px solid rgb(238, 215, 215);
+    width: 300px;
+    text-align: center;
+    padding: 5px;
+    margin-left: 10px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+#show-container {
+    margin-top: 150px;
+    margin-left: 400px;
+    margin-right: 400px;
+    height: 280px;
+    background-color: rgb(31, 29, 29);
+    color: #fff;
+    font-weight: bold;
+}
+#show-container-ul li{
+    background-color: rgb(31, 29, 29);
+    color: #fff;
+}
+#show-container .card-header{
+    text-align: center;
+}
+#show-container-button{
+    font-weight: bold;
+    margin-left: 200px;
+    margin-right: 200px;
+    border: 1px solid #fff;
+    padding: 5px;
+    margin-top: 25px;
+}
+#img-logo{
+    border-radius: 10px;
+    padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/******************************/
+/**** NAVBAR LATERAL **********/
+.navbar-lateral {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    background: #107AA3;
+    width: 70px;
+    overflow: hidden;
+    transition: width 0.2s linear;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    z-index: 20;
+}
+.navbar-lateral a {
+    position: relative;
+    color: #ccc;
+    font-size: 14px;
+    display: table;
+    width: 300px;
+    padding: 10px;
+}
+.navbar-lateral .fas {
+    position: relative;
+    width: 40px;
+    top: 5px;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+.navbar-lateral .nav-item {
+    position: relative;
+    top: -5px;
+    margin-left: 35px;
+    color: white;
+}
+.navbar-lateral a:hover {
+    background: #094157;
+    padding: 10px;
+}
+.navbar-lateral:hover {
+    width: 240px;
+    transition: all 0.5s ease;
+}
+.navbar-lateral .logout {
+    position: absolute;
+    bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*****************************/
+/***** NAVBAR LATERAL FIXO ***/
+.navbar-lateral-fixo {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    background: #107AA3;
+    width: 240px;
+    overflow: hidden;
+    transition: width 0.2s linear;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    z-index: 20;
+}
+.navbar-lateral-fixo a {
+    position: relative;
+    color: #ccc;
+    font-size: 14px;
+    display: table;
+    width: 300px;
+    padding: 10px;
+}
+.navbar-lateral-fixo .fas {
+    position: relative;
+    width: 40px;
+    top: 5px;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+.navbar-lateral-fixo .nav-item {
+    position: relative;
+    top: -5px;
+    margin-left: 35px;
+    text-decoration: none;
+    color: white;
+}
+.navbar-lateral-fixo a:hover {
+    background: #094157;
+    padding: 10px;
+}
+.navbar-lateral-fixo .logout {
+    position: absolute;
+    bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************************/
+/************ HOME ************/
+.secao-home {
+    display: flex;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.secao-home .esquerda-home {
+    height: 95vh;
+    width: 65%;
+    border-radius: 15px;
+}
+.secao-home .direita-home {
+    width: 35%;
+    margin-left: 10px;
+    border-radius: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************************/
+/****** DASHBOARD *************/
+.conteudo-dashboard {
+    display: block;
+    height: 100%;
+    margin-left: 70px;
+}
+.header-dashboard {
+    display: flex;
+    width: 98%;
+    height: 15vh;
+    margin: 10px;
+}
+.titulo-dashboard {
+    margin: 10px;
+    margin-left: 40px;
+    height: 40%;
+}
+.busca-dashboard {
+    margin: 10px;
+    height: 40%;
+    width: 60%;
+}
+.logo-dashboard {
+    margin: 10px;
+    margin-top: 20px;
+    height: 40%;
+    margin-left: 50px;
+}
+.body-dashboard {
+    display: flex;
+    margin: 10px;
+    height: 75vh;
+    padding: 20px;
+}
+.card{
+    width: 250px;
+    height: 200px;
+    color: white;
+    border-radius: 20px;
+    margin: 10px;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    background: #107AA3;
+}
+.card:hover {
+    border: 0.05rem solid #49575C;
+    transition: all 0.9s ease;
+}
+.card .descricao-card {
+    padding: 10px;
+    line-height: 30px;
+    margin-top: 20px;
+}
+.card .descricao-card h2 {
+    text-align: center;
+    text-shadow: 1.5px 1.5px black;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.card .descricao-card span p {
+    text-align: center;
+}
+.icon-card {
+    width: 20px;
+    height: 20px;
+    margin-top: 25px;
+    margin-left: 15px;
+}
+.link {
+    width: 15px;
+    height: 15px;
+    margin-left: 120px;
+}
+.link-card a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************************/
+/***** INDEX CLASS **********/
+.main-index {
+    background-color: #094157;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+.header-index {
+    display: flex;
+}
+.conteudo-index {
+    margin-left: 10%;
+    margin-right: -7%;
+    padding-left: 50px;
+}
+
+.icon-link-index{
+    color: #fff; 
+    width: 50px; 
+    height: 40px;  
+    border-radius: 10px;
+    text-decoration: none;
+}
+.h1-index{
+    text-align: center;  
+    color: #BFE1EF; 
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin-top: 30px;
+}
+.btn-create-index{
+    margin-left: 58%;
+    margin-top: 3%;
+    
+}
+.btn-success{
+    border-radius: 7px;
+}
+.btn-create-notebook{
+    color: #fff; 
+    border: 1px solid red;
+}
+.table-hover{
+    margin-top: 25px
+}
+.thead-index{
+    background-color: #49575C;
+}
+.th-index{
+    color: white
+}
+.td-index {
+    color: black;
+}
+.th-action-index{
+    color: white; 
+    width: 150px
+}
+.tbody-index{
+    background-color: #BFE1EF;
+}
+.modal-content{
+    width: 400px; 
+    margin-left: 100px; 
+    margin-top: 100px; 
+    background-color: rgb(32, 31, 31)
+}
+.modal-title{
+    text-align: center; 
+    color: #fff
+}
+.modal-body, .modal-header, .modal-footer{
+    background-color: rgb(32, 31, 31)
+}
+.p-modal-index{
+    background-color: rgb(32, 31, 31)
+}
+.span-modal-index{
+    color: #fff
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***************************/
+/*** CADASTRO CLASS ********/
+.main-cadastro {
+    background-color: #094157;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+.conteudo-cadastro {
+    margin-top: 4%;
+    margin-left: 15%;
+    margin-right: -1%;
+    padding-left: 30px;
+}
+.h1-cadastro{
+    text-align: left;  
+    color: #BFE1EF; 
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin-top: 30px;
+}
+.btn-cadastro .cadastro-btn{
+    margin-top: 20px;
+    margin-left: 15px;
+}
+.label-cadastro {
+    color: #BFE1EF;
+}
+.header-cadastro {
+    margin-bottom: 10%;
+}
+.btn-cadastro-voltar {
+    background-color: #49575C;
+    border-radius: 15px;
+    width: 22%;
+    margin-top: 5%;
+    margin-left: 10px;
+}
+.btn-cadastro-voltar:hover {
+    background-color: #3b4447;
+}
+.btn-cadastro-voltar a{
+    color: #BFE1EF;
+    text-decoration: none;
+    font-weight: 300;
+}
+.btn-cadastro-voltar a:hover{
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***************************/
+/*** EDIÇAÕ CLASS ********/
+.main-edit {
+    background-color: #094157;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+.conteudo-edit {
+    margin-top: 4%;
+    margin-left: 15%;
+    margin-right: -1%;
+    padding-left: 30px;
+}
+.h1-edit{
+    text-align: left;  
+    color: #BFE1EF; 
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin-top: 30px;
+}
+.btn-edit .edit-btn{
+    margin-top: 20px;
+    margin-left: 15px;
+}
+.label-edit {
+    color: #BFE1EF;
+}
+.header-edit {
+    margin-bottom: 10%;
+}
+.btn-edit-voltar {
+    background-color: #49575C;
+    border-radius: 15px;
+    width: 22%;
+    margin-top: 5%;
+    margin-left: 10px;
+}
+.btn-edit-voltar:hover {
+    background-color: #3b4447;
+}
+.btn-edit-voltar a{
+    color: #BFE1EF;
+    text-decoration: none;
+    font-weight: 300;
+}
+.btn-edit-voltar a:hover{
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*****************************/
+/***** EQUIPAMENTOS **********/ 
+.button-card {
+    padding: 15px;
+    margin-left: 15px;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+/* Style Inicial 
+.container-inicial h1{
+    color: #fff;
+    text-align: center;
+    margin-top: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.container-count {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 15px;
+}
+.container-count p{
+    color: blue;
+}
+.container-img{
+    width: 500px;
+    border-radius: 10px;
+    margin-left: 425px;
+}
+*/
+
+/* Style Dashboard 
+.container-dashboard h1{
+    text-align: center;
+    padding-top: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #fff;
+}
+#table-dashboard{
+    margin-top: 40px;
+}
+*/
+
+
+/* Style Equipamento */
+#cadastro-container{
+    margin-top: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 400px;
+    background-color: rgb(31, 29, 29);color: white;
+    border-radius: 15px;
+}
+.card-body{
+    padding-top: 90px;
+}
+
+/* Navbar */
+#links-navbar{
+    margin-left: 700px;
+}
+.nav-link{
+    color: white;
+    margin-right: 50px;
+    font-family:'Ubuntu' sans-serif;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.nav-link:hover {
+    background-color: blue;
+    transition-duration: 0.5s;    
+}
+#input-search{
+    border-radius: 50px;
+}
+#button-search{
+    border-radius: 50px;
+}
+
+
+/* Style Monitor */
+#container-monitor{
+    margin-top: 30px;
+    padding-top: 20px;
+}
+#container-monitor h2{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+.form-container-monitor {
+    margin-top: 20px;
+
+}
+.form-container-monitor label {
+    font-weight: bold;
+    color: white;
+}
+#index-container-monitor {
+    margin-top: 15px;
+    margin-left: 150px;
+    margin-right: 150px;
+    background-color: rgb(31, 29, 29);
+}
+.card-cadastro-monitor{
+    margin-top: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+    height: 525px;
+    background-color: rgb(31, 29, 29);
+    border-radius: 10px;
+}
+
+
+/* Style Notebook */
+#container-notebook{
+    margin-top: 30px;
+    padding-top: 20px;
+}
+#container-notebook h2{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+.form-container-notebook {
+    margin-top: 20px;
+}
+.form-container-notebook label {
+    font-weight: bold;
+    color: white;
+}
+#index-container-notebook {
+    margin-top: 15px;
+    margin-left: 150px;
+    margin-right: 150px;
+    background-color: rgb(31, 29, 29);
+}
+.card-cadastro-notebook{
+    margin-top: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+    height: 525px;
+    background-color: rgb(31, 29, 29);
+    border-radius: 10px;
+}
+
+
+
+/* Style Computador */
+#container-computador {
+    margin-top: 30px;
+    padding-top: 20px;
+}
+#container-computador h2{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+.form-container-computador {
+    margin-top: 20px;
+}
+.form-container-computador label {
+    font-weight: bold;
+    color: white;
+}
+.card-cadastro-computador{
+    margin-top: 20px;
+    margin-left: 180px;
+    margin-right: 180px;
+    height: 525px;
+    background-color: rgb(31, 29, 29);
+    border-radius: 10px;
+}
+
+/* Tela Dashboard 
+.card{
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 100px;
+    border-radius: 10px;
+    border-top-right-radius: 10px;  
+    height: 300px;
+}
+#img-dash-notebook{
+    width: 100px;
+    height: 100px;
+}
+#img-dash-monitor{
+    width: 90px;
+    padding-left: 15px;
+    padding-top: 15px;
+    height: 100px;
+}
+#img-dash-computador{
+    height: 100px;
+    width: 80px;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+.btn-dash{
+    padding-left: 120px;
+}
+*/
+#h1-dash{
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Tela de Login */
+
+
+/* Tela Index */
